@@ -34,6 +34,11 @@ body {
   margin: 0 auto;
   padding: 60px 0;
 }
+.big-content {
+    max-width: 950px;
+    width: 90%;
+    margin: 0 auto;
+}
 
 a {
     color: #fffdfc;
@@ -82,5 +87,17 @@ nav a:hover {
 nav .logo {
   width: 3em;
   transition: background-color 0.2s;
+}
+
+/* task master list */
+
+.big-content ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+.big-content li {
+    
+
 }
 
