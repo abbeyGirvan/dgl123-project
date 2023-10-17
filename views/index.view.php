@@ -12,6 +12,9 @@
 <body>
     <main>
         <?php require 'partials/header.php'; ?>
+        <div class="content-wrap">
+            <h2>All Tasks</h2>
+        </div>
     </main>
 
 </body>
