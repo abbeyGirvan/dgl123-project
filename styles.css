@@ -1,6 +1,12 @@
 /*
     Colour Codes:
-    
+    #FFFDFC --> off white
+    #F2F0EF --> light grey
+    #1F3F43 --> dark teal
+    #05636F --> middle dark teal
+    #3EAEA8 --> middle teal
+    #7FD4CF --> mid light teal 
+    #CAEEEC --> light teal
 */
 /* global styles */
 html {
@@ -14,7 +20,7 @@ html {
 }
 
 body {
-  color: #272716;
+  color: #1F3F43;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -29,10 +35,15 @@ body {
   padding: 60px 0;
 }
 
+a {
+    color: #fffdfc;
+    text-decoration: none;
+}
+
 /* header and nav styles */
 header {
-  background-color: #025048;
-  color: #fafbef;
+  background-color: #05636F;
+  color: #fffdfc;
 }
 header h1 {
   margin-top: 100px;
@@ -42,7 +53,7 @@ header h2 {
 }
 
 nav {
-  background-color: rgba(2, 80, 72, 0.9);
+  background-color: #05636F;
   position: fixed;
   top: 0;
   width: 100%;
@@ -64,8 +75,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #cf87b0;
-  color: #272716;
+  background-color: #7FD4CF;
+  color: #1F3F43;
 }
 
 nav .logo {
