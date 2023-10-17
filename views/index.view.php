@@ -46,10 +46,10 @@
             </div>
             <div class="status">
                 <h3>status</h3>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
+                <div><input type="checkbox">Oct 20</div>
+                <div><input type="checkbox">Oct 20</div>
+                <div><input type="checkbox">Oct 20</div>
+                <div><input type="checkbox">Oct 20</div>
             </div>
         </div>
     </main>
