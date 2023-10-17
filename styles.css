@@ -8,7 +8,17 @@
     #7FD4CF --> mid light teal 
     #CAEEEC --> light teal
 */
-/* global styles */
+
+/* --------------------
+    CONTENTS:
+    1. global
+    2. header
+        2a. nav
+    3.task master-list
+-------------------- */
+
+
+/* ---------- 1. global styles ---------- */
 html {
   box-sizing: border-box;
 }
@@ -33,7 +43,6 @@ a {
     text-decoration: none;
 }
 
-
 .content-wrap {
   max-width: 800px;
   width: 85%;
@@ -48,7 +57,7 @@ a {
 
 
 
-/* header and nav styles */
+/* ---------- 2. header ---------- */
 header {
   background-color: #05636F;
   color: #fffdfc;
@@ -60,6 +69,7 @@ header h2 {
   padding: 20px;
 }
 
+/* 2a. nav */
 nav {
   background-color: #05636F;
   position: fixed;
@@ -92,7 +102,7 @@ nav .logo {
   transition: background-color 0.2s;
 }
 
-/* task master list */
+/* ---------- 3. task master-list ---------- */
 
 .big-content ul {
     list-style-type: none;
