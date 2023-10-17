@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Your Tasks</title>
     <link rel="stylesheet" href="styles.css" />
 
 </head>
@@ -13,7 +13,7 @@
     <main>
         <?php require 'partials/header.php'; ?>
         <div class="content-wrap">
-            <h2>All Tasks</h2>
+            <h2>Neil's ToDo List</h2>
         </div>
         <!--probably make this into a table setup rather than using grid (good css practice though)-->
         <div class="big-content">
@@ -22,8 +22,7 @@
                 <ul>
                     <li>kitchen</li>
                     <li>kitchen</li>
-                    <li>bathroom</li>
-                    <li>living room</li>
+                   
                 </ul>
             </div>
             <div class="tasks">
@@ -31,25 +30,15 @@
                 <ul>
                     <li>empty dishwasher</li>
                     <li>load dishwasher</li>
-                    <li>clean shower</li>
-                    <li>sweep floors</li>
+                 
                 </ul>
             </div>
-            <div class="assign">
-                <h3>assigned to</h3>
-                <ul>
-                    <li>Neil</li>
-                    <li>Neil</li>
-                    <li>Andrew</li>
-                    <li>Renee</li>
-                </ul>
-            </div>
+         
             <div class="status">
                 <h3>status</h3>
                 <input type="checkbox">
                 <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
+               
             </div>
         </div>
     </main>
