@@ -122,8 +122,29 @@ nav .logo {
 }
 
 /* ---------- 4. create new task ---------- */
-form {
+.create-task {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: .5fr 1fr;
+    grid-template-rows: .5fr 1fr .5fr;
+    grid-gap: 20px;
+}
+.custom-input {
+  grid-column: 1 / -1;
+}
+.rooms {
+  display: grid;
+  grid-template-columns: .5fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+}
+.users {
+  display: grid;
+  grid-template-columns: .25fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 5px;
+}
+.create-task .btn {
+  grid-column: 2 / 3;
+  background-color: #05636F;
+  color: #fffdfc;
 }
