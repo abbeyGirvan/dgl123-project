@@ -150,3 +150,22 @@ nav .logo {
 }
 
 /* ---------- 5. account ---------- */
+.side-by-side {
+  display: flex;
+  justify-content: space-between;
+}
+.current-user {
+  border-right: 2px solid #1F3F43;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3 1fr);
+  grid-gap: 5px;
+  justify-content: space-between;
+  align-content: center;
+}
+.placeholder {
+  width: 1fr;
+  height: 30px;
+  background-color: lightgray;
+  border: 2px solid grey;
+}
