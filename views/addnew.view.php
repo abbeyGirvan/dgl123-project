@@ -12,7 +12,37 @@
 <body>
     <main>
         <?php require 'partials/header.php'; ?>
-        
+        <div class="content-wrap">
+            <form class="create-task" action="">
+                <div class="rooms">
+                    <label for="task-name">Task:</label>
+                    <input type="text" id="task-name">
+                </div>
+                <div class="rooms">
+                    <input type="radio" name="kitchen" id="kitchen">
+                    <label for="kitchen">kitchen</label>
+                    <input type="radio" name="bathroom" id="bathroom">
+                    <label for="bathroom">bathroom</label>
+                    <input type="radio" name="living room" id="living-room">
+                    <label for="living-room">living room</label>
+                    <input type="radio" name="other" id="other">
+                    <label for="other">other</label>
+                </div>
+                <div class="users">
+                    <input type="radio" name="neil" id="neil">
+                    <label for="neil">neil</label>
+                    <input type="radio" name="andrew" id="andrew">
+                    <label for="andrew">andrew</label>
+                    <input type="radio" name="living room" id="living-room">
+                    <label for="nicky">nicky</label>
+                </div>
+                <div class="date">
+                    <label for="date">Due On or By:</label>
+                    <input type="date">
+                </div>
+            </form>
+        </div>
+
     </main>
 
 </body>
