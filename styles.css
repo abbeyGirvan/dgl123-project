@@ -17,6 +17,7 @@
     3.task master-list
     4. create new task
     5. account
+    6. footer
 -------------------- */
 
 
@@ -176,4 +177,31 @@ nav .logo {
 }
 .account-info p {
   margin-top: 5px;
+}
+
+/* ---------- 6. footer ---------- */
+footer {
+  background-color: #05636F;
+  color: #fffdfc;
+}
+.foot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.footer-contact {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3 1fr);
+  align-items: center;
+}
+.socials a{
+  display: block;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.footer-contact p {
+  justify-self: right;
+  font-size: 18px;
 }
