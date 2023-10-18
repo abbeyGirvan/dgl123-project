@@ -17,7 +17,7 @@
         </div>
         <!--probably make this into a table setup rather than using grid (good css practice though)-->
         <div class="big-content">
-            <div class="rooms">
+            <div class="room-list">
                 <h3>room</h3>
                 <ul>
                     <li>kitchen</li>
