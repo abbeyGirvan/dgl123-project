@@ -103,7 +103,7 @@ nav .logo {
 }
 
 /* ---------- 3. task master-list ---------- */
-
+    /*also applies to your tasks*/
 .big-content ul {
     list-style-type: none;
     margin-left: 0;
@@ -121,3 +121,9 @@ nav .logo {
     justify-content: space-around;
 }
 
+/* ---------- 4. create new task ---------- */
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .5fr 1fr;
+}
