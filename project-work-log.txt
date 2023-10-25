@@ -1,4 +1,11 @@
 Agile Method Log
+
+FEATURE TO WORK ON:
+    - create sign up page
+    - create login page
+    - dummy data for logins and signups
+
+POSSIBLE SUGGESTIONS
  
 Css snippet improvements: use ::root variables to define colours and text sizes
  
