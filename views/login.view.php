@@ -19,7 +19,7 @@
                 <input type="text" name="email">
                 <label for="password">password</label>
                 <input type="text" name="password">
-                <input type="submit">
+                <input type="submit" class="log-submit">
             </form>
             <p>new to squeaky clean?<br>sign up for an account</p>
             <button>sign up here</button>

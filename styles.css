@@ -211,4 +211,12 @@ footer {
 .login {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.login label {
+  margin-top: 10px;
+}
+.log-submit {
+  margin-top: 15px;
 }
