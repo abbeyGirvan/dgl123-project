@@ -1,13 +1,21 @@
 # dgl123-project
 dgl 123 final project
 
-## STATUS:
+## October 25th lab
 
-October 25th lab
-FEATURE TO WORK ON:
+### FEATURE TO WORK ON:
     - create sign up page
     - create login page
     - dummy data for logins and signups
+
+### Progress
+    - sign up page structure completed
+    - log in page structure completed
+    - some structure to create user profiles created
+    - comments left for future work
+
+
+## STATUS:
 
 Currently Completed Milestone 2
 
