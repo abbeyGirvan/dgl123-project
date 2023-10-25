@@ -20,7 +20,6 @@
     6. footer
 -------------------- */
 
-
 /* ---------- 1. global styles ---------- */
 html {
   box-sizing: border-box;
@@ -33,7 +32,7 @@ html {
 }
 
 body {
-  color: #1F3F43;
+  color: #1f3f43;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -42,8 +41,8 @@ body {
 }
 
 a {
-    color: #fffdfc;
-    text-decoration: none;
+  color: #fffdfc;
+  text-decoration: none;
 }
 
 .content-wrap {
@@ -53,16 +52,14 @@ a {
   padding: 20px 0;
 }
 .big-content {
-    max-width: 950px;
-    width: 90%;
-    margin: 0 auto;
+  max-width: 950px;
+  width: 90%;
+  margin: 0 auto;
 }
-
-
 
 /* ---------- 2. header ---------- */
 header {
-  background-color: #05636F;
+  background-color: #05636f;
   color: #fffdfc;
 }
 header h1 {
@@ -74,7 +71,7 @@ header h2 {
 
 /* 2a. nav */
 nav {
-  background-color: #05636F;
+  background-color: #05636f;
   position: fixed;
   top: 0;
   width: 100%;
@@ -96,8 +93,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #7FD4CF;
-  color: #1F3F43;
+  background-color: #7fd4cf;
+  color: #1f3f43;
 }
 
 nav .logo {
@@ -106,49 +103,49 @@ nav .logo {
 }
 
 /* ---------- 3. task master-list ---------- */
-    /*also applies to your tasks*/
+/*also applies to your tasks*/
 .big-content ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding: 0;
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
 }
 .big-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr 0.5fr;
-    grid-template-rows: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 0.5fr;
+  grid-template-rows: repeat(2, 1fr);
 }
 .status {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-around;
 }
 
 /* ---------- 4. create new task ---------- */
 .create-task {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: .5fr 1fr .5fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  grid-gap: 20px;
 }
 .custom-input {
   grid-column: 1 / -1;
 }
 .rooms {
   display: grid;
-  grid-template-columns: .5fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
   grid-template-rows: auto;
   grid-gap: 5px;
 }
 .users {
   display: grid;
-  grid-template-columns: .25fr 1fr;
+  grid-template-columns: 0.25fr 1fr;
   grid-template-rows: auto;
   grid-gap: 5px;
 }
 .create-task .btn {
   grid-column: 2 / 3;
-  background-color: #05636F;
+  background-color: #05636f;
   color: #fffdfc;
 }
 
@@ -158,16 +155,16 @@ nav .logo {
   justify-content: space-between;
 }
 .current-user {
-  border-right: 2px solid #1F3F43;
+  border-right: 2px solid #1f3f43;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 5px;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
 }
 .placeholder {
-  width: 1fr;
+  flex: 1;
   height: 30px;
   background-color: lightgray;
   border: 2px solid grey;
@@ -181,7 +178,7 @@ nav .logo {
 
 /* ---------- 6. footer ---------- */
 footer {
-  background-color: #05636F;
+  background-color: #05636f;
   color: #fffdfc;
 }
 .foot-container {
@@ -196,7 +193,7 @@ footer {
   grid-template-rows: repeat(3 1fr);
   align-items: center;
 }
-.socials a{
+.socials a {
   display: block;
   font-size: 18px;
   text-decoration: underline;
