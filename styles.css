@@ -219,4 +219,8 @@ footer {
 }
 .log-submit {
   margin-top: 15px;
+  background-color: #1F3F43;
+  color: #fffdfc;
+  border: none;
+  padding: 10px 20px;
 }
