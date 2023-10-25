@@ -12,6 +12,12 @@
 <body>
     <main>
         <?php require 'partials/login-header.php'; ?>
+        <div class="content-wrap">
+            <div class="lower-container">
+                <p>already have an account?</p>
+                <button><a href="signup.php">log in here</a></button>
+            </div>
+        </div>
     </main>
 
 </body>
