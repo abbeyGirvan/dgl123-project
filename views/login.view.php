@@ -21,8 +21,13 @@
                 <input type="text" name="password">
                 <input type="submit" class="log-submit" value="LOG IN">
             </form>
-            <p>new to squeaky clean?<br>sign up for an account</p>
-            <button>sign up here</button>
+
+        </div>
+        <div class="content-wrap">
+            <div class="lower-container">
+                <p>new to squeaky clean?<br>sign up for an account</p>
+                <button>sign up here</button>
+            </div>
         </div>
     </main>
 

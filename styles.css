@@ -208,7 +208,8 @@ footer {
 
 
 /* ---------- 7. login ---------- */
-.login {
+.login,
+.lower-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -224,3 +225,4 @@ footer {
   border: none;
   padding: 10px 20px;
 }
+
