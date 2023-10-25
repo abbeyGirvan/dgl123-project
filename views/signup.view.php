@@ -15,7 +15,7 @@
         <div class="content-wrap">
             <form action="signup" class="signup">
                 <label for="first-name">first name</label>
-                <input type="text" name="first-name" >
+                <input type="text" name="first-name">
                 <label for="last-name">last name</label>
                 <input type="text" name="last-name">
                 <label for="email">email address</label>

@@ -209,13 +209,15 @@ footer {
 
 /* ---------- 7. login ---------- */
 .login,
+.signup,
 .lower-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-.login input {
+.login input,
+.signup input {
   margin-bottom: 10px;
 }
 .log-submit,
