@@ -7,9 +7,9 @@
 </head>
 <body>
     <main>
-    <?php require 'header.php'; ?>
+    <?php require 'partials/header.php'; ?>
     </main>
-    <?php require 'footer.php'; ?>
+    <?php require 'partials/footer.php'; ?>
 </body>
 </html>
 
