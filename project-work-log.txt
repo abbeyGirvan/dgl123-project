@@ -28,6 +28,15 @@ To add a login page to your project, you will need to implement a user authentic
     4.	    Secure Session Management: Use PHP's session_start() function to initiate a session upon successful authentication. Set session variables to store user data or access levels.
     5.	    Redirect Users: After successful login, redirect users to the main page of your project. If the login fails, display an appropriate error message.
 
+ASKED CHATGPT FOR SUGGESTIONS BASED ON PEER FEEDBACK ABOUT STYLE GUIDE CONSISTENCY:
+    •	Consistent Color Scheme: The use of a consistent color scheme, along with defined color codes, promotes a cohesive and professional appearance. This contributes to a unified visual experience.
+    •	Readable Font and Text Size: The chosen font family and font size contribute to readability. However, ensure that the font size is responsive and adapts well to different screen sizes for optimal user experience.
+    •	Responsive Design: While there are indications that the design is responsive, additional attention to responsiveness would enhance the user experience across various devices and screen sizes.
+    •	Alignment and Layout: The layout appears well-organized with clear section divisions. Ensure consistent alignment and spacing for an improved visual hierarchy and user-friendliness.
+    •	Semantic HTML Elements: The use of semantic HTML elements, such as <header>, <nav>, and <footer>, aids in creating a well-structured and accessible web page.
+    •	Hover Effects: The hover effects applied to links in the navigation menu enhance interactivity, but make sure they are consistent across the entire project.
+    •	Consistent Element Styling: Maintain consistent styling for form elements, including radio buttons and checkboxes, for a seamless and uniform interface.
+    •	To further enhance the user experience, ensure that the website is fully responsive, with consistent styling and alignment throughout all sections. Regular testing across different devices and screen sizes is crucial to ensure a smooth and consistent user experience.
 
 
 PEER FEEDBACK - SUMMARIZED BY CHATGPT:
