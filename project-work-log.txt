@@ -5,6 +5,23 @@ FEATURE TO WORK ON:
     - create login page
     - dummy data for logins and signups
 
+PROGRESS MADE:
+    - sign up page structure completed
+    - log in page structure completed
+    - some structure to create user profiles created
+    - comments left for future work
+
+FUTURE WORK:
+    - login/sign up buttons need to link to appropriate pages
+    - input fields will eventually link to db and add/update info\
+    - input fields will eventually need to check against db for validity and uniqueness
+    - login password field will eventually need to check validity against db for login
+    - sign up password fields will eventually need to check for 'good password' requirements and that they match one another
+
+
+
+
+
 POSSIBLE SUGGESTIONS
  
 Css snippet improvements: use ::root variables to define colours and text sizes
