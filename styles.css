@@ -215,11 +215,12 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-.login label {
-  margin-top: 10px;
+.login input {
+  margin-bottom: 10px;
 }
-.log-submit {
-  margin-top: 15px;
+.log-submit,
+.lower-container button {
+  /* margin-top: 15px; */
   background-color: #1F3F43;
   color: #fffdfc;
   border: none;
