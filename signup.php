@@ -1,5 +1,5 @@
 <?php
 
-$heading = 'Login';
+$heading = 'Sign Up';
 
 require 'views/signup.view.php';
