@@ -20,6 +20,15 @@ To add dynamic functionality to your PHP page, you can utilize server-side scrip
                         
 To organize the 'big-content' class more efficiently, you can consider using a more semantically appropriate HTML structure such as <table>. This will not only enhance the accessibility and maintainability of the code but also ensure that the content is properly structured for better display and understanding.
 
+ASKED CHATGPT FOR SUGGESTIONS ON SETTING UP USER LOGIN:
+To add a login page to your project, you will need to implement a user authentication system. Here is a step-by-step guide to help you get started:
+    1.	    Create a Login Page: Design and create a login page (e.g., login.php) with input fields for username and password, along with a submit button.
+    2.	    Set Up a Database: Create a database to store user credentials securely. Include a table for users that has fields for username and password.
+    3.	    PHP Script for Authentication: Create a PHP script (e.g., auth.php) to handle user authentication. Use the PHP password_hash() function to hash passwords before storing them in the database, and the password_verify() function to verify passwords during login.
+    4.	    Secure Session Management: Use PHP's session_start() function to initiate a session upon successful authentication. Set session variables to store user data or access levels.
+    5.	    Redirect Users: After successful login, redirect users to the main page of your project. If the login fails, display an appropriate error message.
+
+
 
 PEER FEEDBACK - SUMMARIZED BY CHATGPT:
                         
