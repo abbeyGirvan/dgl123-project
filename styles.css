@@ -14,6 +14,7 @@
     1. global
     2. header
         2a. nav
+        2b. new header (login and sign up)
     3.task master-list
     4. create new task
     5. account
@@ -104,7 +105,14 @@ nav .logo {
   width: 3em;
   transition: background-color 0.2s;
 }
-
+/*  2b. new header (login and sign up) */
+.new-header {
+  display: flex;
+  justify-content: space-between;
+}
+.new-header h1 {
+  margin: auto;
+}
 /* ---------- 3. task master-list ---------- */
 /*also applies to your tasks*/
 .big-content ul {
