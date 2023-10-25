@@ -20,12 +20,17 @@ To add dynamic functionality to your PHP page, you can utilize server-side scrip
                         
 To organize the 'big-content' class more efficiently, you can consider using a more semantically appropriate HTML structure such as <table>. This will not only enhance the accessibility and maintainability of the code but also ensure that the content is properly structured for better display and understanding.
 
+
 PEER FEEDBACK - SUMMARIZED BY CHATGPT:
                         
     1.	        User Rights and Task Management: Consider defining user rights for task assignment, addition, and deletion, both for personal and other users' tasks. It is important to clarify user control and task assignment to ensure smooth project management.
+        NOTE: can be applied after implementing user database
+
     2.	        Detailed Project Description: Provide a more detailed project description to offer a comprehensive understanding of the project's objectives and functionalities.
     3.	        Mobile Responsiveness: Address mobile responsiveness to ensure that the website is easily accessible and usable across different devices and screen sizes.
     4.	        Clarification of Task Assignment: Clarify the process of task assignment, ensuring that it is intuitive and straightforward for all users.
+       NOTE: some updated wireframing needed to work through this?
+
     5.	        Styling Plans: Discuss the styling plans for the project to ensure a consistent and appealing visual design that enhances user experience.
     6.         	Alignment and Consistency: Ensure proper alignment and consistency in the website layout for a more polished and professional appearance.
     7.	        Radio Button Size Consistency: Address the inconsistency in the size of radio buttons for improved visual consistency.
