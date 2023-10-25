@@ -26,7 +26,7 @@
         <div class="content-wrap">
             <div class="lower-container">
                 <p>new to squeaky clean?<br>sign up for an account</p>
-                <button>sign up here</button>
+                <button><a href="signup.php">sign up here</a></button>
             </div>
         </div>
     </main>
