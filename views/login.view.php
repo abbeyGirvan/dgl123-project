@@ -21,7 +21,6 @@
     <p>new to squeaky clean?<br>sign up for an account</p>
     <button>sign up here</button>
     </main>
-    <?php require 'partials/footer.php'; ?>
 </body>
 </html>
 
