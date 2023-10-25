@@ -1,0 +1,22 @@
+Agile Method Log
+ 
+Css snippet improvements: use ::root variables to define colours and text sizes
+ 
+Css snippet improvements: syntax errors, switch to use of flex: 1; line 170, switch align-content to align items line 167
+ 
+Improvements to <form> element of create.php:
+      1.                 Implement Proper Form Handling: Add an appropriate action attribute to the form to specify where to send the form data for processing.
+      2.                 Use Semantic HTML Elements: Utilize appropriate HTML elements to enhance the structure and semantics of the page.
+      3.                 Improve Accessibility: Include for attributes in labels to associate them with the corresponding input elements, enabling users to click on the label to select the associated input.
+      4.                 Fix Duplicate IDs: Ensure that each HTML element has a unique id attribute to prevent conflicts and ensure proper functionality.
+ 
+ 
+To add dynamic functionality to your PHP page, you can utilize server-side scripting and various PHP functionalities to handle form submission, store data, and display dynamic content. Here are some suggestions to enhance the functionality:
+      1. Form Submission Handling: Create a PHP script, such as process.php, to handle the form submission. You can use PHP superglobals like $_POST to retrieve form data and perform necessary actions, such as storing the data in a database or a file.
+      2. Input Validation: Implement form validation on the server side to ensure that the submitted data is valid and safe to process. You can check for empty fields, validate the date format, and sanitize user inputs to prevent security vulnerabilities.
+      3. Database Integration: If you want to store the submitted data persistently, consider integrating a database like MySQL or SQLite. Use PHP's database functions (e.g., PDO or MySQLi) to establish a connection, insert data, or retrieve information from the database.
+      4. Displaying Dynamic Content: Fetch and display dynamic content from a database or any external source. You can use PHP to dynamically generate HTML content based on the data retrieved from the database
+                          2
+                        
+To organize the 'big-content' class more efficiently, you can consider using a more semantically appropriate HTML structure such as <table>. This will not only enhance the accessibility and maintainability of the code but also ensure that the content is properly structured for better display and understanding.
+                        
