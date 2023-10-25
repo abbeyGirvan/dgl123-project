@@ -18,6 +18,9 @@
     4. create new task
     5. account
     6. footer
+    7. login
+    8. sign up
+    9. login-signup header
 -------------------- */
 
 /* ---------- 1. global styles ---------- */
@@ -201,4 +204,11 @@ footer {
 .footer-contact p {
   justify-self: right;
   font-size: 18px;
+}
+
+
+/* ---------- 7. login ---------- */
+.login {
+  display: flex;
+  flex-direction: column;
 }

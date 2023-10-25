@@ -14,7 +14,7 @@
         <?php require 'partials/login-header.php'; ?>
 
         <div class="content-wrap">
-            <form action="login">
+            <form action="login" class="login">
                 <label for="email">email address</label>
                 <input type="text" name="email">
                 <label for="password">password</label>
