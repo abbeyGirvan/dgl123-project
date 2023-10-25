@@ -3,6 +3,12 @@ dgl 123 final project
 
 ## STATUS:
 
+October 25th lab
+FEATURE TO WORK ON:
+    - create sign up page
+    - create login page
+    - dummy data for logins and signups
+
 Currently Completed Milestone 2
 
 1. Finalize your design
