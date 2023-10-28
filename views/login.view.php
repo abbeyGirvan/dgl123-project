@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>login</title>
-    <link rel="stylesheet" href="styles.css" />
-
-</head>
+<?php require 'partials/head.php'; ?>
 
 <body>
     <main>
