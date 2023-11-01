@@ -4,6 +4,43 @@ dgl-123 final project
 
 Abbey Girvan
 
+## November 1st lab
+
+Flowcharting logic for dynamic pages. For flowchart images see MS word document included in documentation folder, file name Lab9a. 
+
+Self Eval: 3/4 
+Created flowcharts for major logic sections, and created more documenation within README. Didn't implement any new code/logic in project.
+
+### HOME: display task list based on account logged in
+-	Must be sortable.
+-	Must display room, task, due date, status.
+-	Checking the status box must update the table row.
+
+### ADD A TABLE: create a new task (new table row)
+-	Must add data to Tasks table in DB.
+-	Must update display on the home page.
+
+### LOGIN: verify email and password
+-	Must check if email exists in accounts table.
+-	Must check that provided email matches password in that row.
+-	Link to login only active if email exists and email + password match.
+-	If conditions not met needs feedback to tell user input not good
+-	Button inactive entirely until all fields filled.
+-	Needs feedback if user tries to click when fields missing.
+
+### SIGNUP: add data to accounts table
+-	Must check if email already exists in database (is a unique field)
+-	Needs to provide feedback to user if email already in use.
+-	Must check if password and confirmation password field match.
+-	Must add new row to accounts table after sign-up button clicked. (If fields are valid)
+-	Add first name, last name, email, and FIRST password field.
+-	Link to sign up only active if email is unique and passwords match.
+-   If conditions not met needs to give feedback to user explaining what’s not good
+-	Button inactive entirely until fields all filled.
+-   Needs feedback if user tries to click when fields missing.
+
+
+
 ## October 25th lab
 
 ### FEATURE TO WORK ON:
