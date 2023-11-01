@@ -13,9 +13,9 @@ Created flowcharts for major logic sections, and created more documenation withi
 
 ### HOME: display task list based on account logged in
 
--	Must be sortable.
--	Must display room, task, due date, status.
--	Checking the status box must update the table row.
+    -	Must be sortable.
+    -	Must display room, task, due date, status.
+    -	Checking the status box must update the table row.
 
 ### ADD A TABLE: create a new task (new table row)
 
