@@ -3,7 +3,7 @@
 
 <body>
     <main>
-        <?php require 'partials/login-header.php'; ?>
+        <?php require 'partials/landing.header.php'; ?>
         <div class="content-wrap">
             <form action="signup" class="signup">
                 <label for="first-name">first name</label>

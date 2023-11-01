@@ -2,7 +2,7 @@
 
 <body>
     <main>
-        <?php require 'partials/login-header.php'; ?>
+        <?php require 'partials/landing.header.php'; ?>
 
         <div class="content-wrap">
             <form action="login" class="login">
