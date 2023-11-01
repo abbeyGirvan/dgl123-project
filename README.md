@@ -12,15 +12,18 @@ Self Eval: 3/4
 Created flowcharts for major logic sections, and created more documenation within README. Didn't implement any new code/logic in project.
 
 ### HOME: display task list based on account logged in
+
 -	Must be sortable.
 -	Must display room, task, due date, status.
 -	Checking the status box must update the table row.
 
 ### ADD A TABLE: create a new task (new table row)
+
 -	Must add data to Tasks table in DB.
 -	Must update display on the home page.
 
 ### LOGIN: verify email and password
+
 -	Must check if email exists in accounts table.
 -	Must check that provided email matches password in that row.
 -	Link to login only active if email exists and email + password match.
@@ -29,6 +32,7 @@ Created flowcharts for major logic sections, and created more documenation withi
 -	Needs feedback if user tries to click when fields missing.
 
 ### SIGNUP: add data to accounts table
+
 -	Must check if email already exists in database (is a unique field)
 -	Needs to provide feedback to user if email already in use.
 -	Must check if password and confirmation password field match.
