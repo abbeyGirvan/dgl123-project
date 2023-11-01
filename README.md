@@ -1,5 +1,8 @@
 # dgl123-project
-dgl 123 final project
+
+dgl-123 final project
+
+Abbey Girvan
 
 ## October 25th lab
 
@@ -8,7 +11,7 @@ dgl 123 final project
     - create login page
     - dummy data for logins and signups
 
-### Progress
+### PROGRESS
     - sign up page structure completed
     - log in page structure completed
     - some structure to create user profiles created
@@ -17,7 +20,17 @@ dgl 123 final project
 
 ## STATUS:
 
-Currently Completed Milestone 2
+**W.I.P.** Milestone 3
+
+1. Database creation and linkage
+2. Basic web app functionality
+3. Flow Diagrams for logic
+
+This milestone focuses on generating a working prototype for your target app.  While your app may be rough, most functionality should be in place and demonstrable.  This milestone will include techniques and contributions from weekly assignments as well -- please only evaluate your work here that isn't an exact duplicate of weekly assignments.
+
+For this milestone, you'll need to connect your front end components to the back-end and integrate your database functionality. 
+
+**Completed** Milestone 2
 
 1. Finalize your design
 2. Identify your target file structure
