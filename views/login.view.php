@@ -10,7 +10,7 @@
                 <input type="text" name="email">
                 <label for="password">password</label>
                 <input type="text" name="password">
-                <input type="submit" class="log-submit" value="LOG IN"> <!-- needs to link to index -->
+                <a href="index.php"><input type="submit" class="log-submit" value="LOG IN"></a> <!-- needs to link to index -->
             </form>
         </div>
 

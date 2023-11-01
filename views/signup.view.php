@@ -16,7 +16,7 @@
                 <input type="text" name="password">
                 <label for="confirm-password">confirm password</label>
                 <input type="text" name="confirm-password">
-                <input type="submit" class="log-submit" value="SIGN UP"><!-- needs to link to user-creation -->
+                <a href="index.php"><input type="submit" class="log-submit" value="SIGN UP"></a><!-- needs to link to user-creation -->
             </form>
         </div>
         <div class="content-wrap">
