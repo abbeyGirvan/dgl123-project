@@ -5,9 +5,8 @@
     //else redirect page to log-in page
 }*/
 
-function insert() {
-    
-}
+
+
 
 
 //from 'PHP&MySQL' by JON DUCKETT
@@ -32,7 +31,8 @@ function html_escape($text): string
 
 
 //from Laracast videos 'die and dump'
-function dd($value){
+function dd($value)
+{
     echo "<pre>";
     var_dump($value);
     echo "</pre>";

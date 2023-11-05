@@ -10,22 +10,25 @@
             <form class="create-task" action="controllers/task-insert.php" method="post">
                 <div class="custom-input">
                     <label for="task-name">Task:</label>
-                    <input type="text" id="task-name">
+                    <input type="text" id="task-name" name="task-name">
                 </div>
                 <div class="rooms">
-                    <input type="radio" name="kitchen" id="kitchen">
                     <label for="kitchen">kitchen</label>
-                    <input type="radio" name="bathroom" id="bathroom">
+                    <input type="radio" name="room" id="kitchen">
+
                     <label for="bathroom">bathroom</label>
-                    <input type="radio" name="living room" id="living-room">
+                    <input type="radio" name="room" id="bathroom">
+
                     <label for="living-room">living room</label>
-                    <input type="radio" name="other" id="other">
+                    <input type="radio" name="room" id="living-room">
+
                     <label for="other">other</label>
+                    <input type="radio" name="room" id="other">
                 </div>
                 
                 <div class="date">
-                    <label for="date">Due On or By:</label>
-                    <input type="date">
+                    <label for="due-date">Due On or By:</label>
+                    <input type="date" id="due-date" name="due-date">
                 </div>
                 <input class="btn" type="submit" value="CREATE">
             </form>
