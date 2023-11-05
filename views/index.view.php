@@ -3,17 +3,7 @@
 require 'partials/head.php';
 // require 'Database.php';
 // require 'functions.php';
-$servername = "localhost";
-$username = "testuser";
-$password = "badpassword";
-$dbname = "dgl123-project";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require 'controllers/db-connection.php';
 
 
 $sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`status`
@@ -69,6 +59,7 @@ $result = $conn->query($sql);
                         <th>ROOM</th>
                         <th>TASK</th>
                         <th>DUE</th>
+                        <th>STATUS</th>
                     </tr>
                     <?php
                     if ($result->num_rows > 0) {
@@ -78,6 +69,7 @@ $result = $conn->query($sql);
                                 "<td>" . $row["room-name"] . "</td>" .
                                 "<td>" . $row["task-name"] . "</td>" .
                                 "<td>" . $row["due-date"] . "</td" .
+                                "<td>" . $row["status"] . "</td" .
                                 "</tr>";
                         }
                     } else {
