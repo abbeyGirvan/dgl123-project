@@ -1,4 +1,32 @@
-<?php require 'partials/head.php'; ?>
+<?php
+
+require 'partials/head.php';
+require 'Database.php';
+require 'functions.php';
+
+
+$sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`status`
+    FROM tasks, rooms
+    WHERE tasks.`account-id` = 1
+    AND rooms.`id` = tasks.`room-id`
+    ORDER BY 1,2 ASC;";
+
+//$taskList = pdo($pdo, $sql)->fetchAll();
+$statement = $pdo->query($sql);
+$members   = $statement->fetchAll();
+
+/*
+<?php foreach ($members as $member) { ?>
+                <p>
+                    <?= html_escape($member['status']) ?>
+                    <?= html_escape($member['room-name']) ?>
+                    <?= html_escape($member['task-name']) ?>
+                    <?= html_escape($member['due-date']) ?>
+                </p>
+            <?php } ?>
+*/
+
+?>
 
 
 <body>
@@ -8,6 +36,19 @@
             <h2>All Tasks</h2>
         </div>
         <!--probably make this into a table setup rather than using grid (good css practice though)-->
+        <div>
+            <div class="room-list">
+                <?php foreach ($members as $member) { ?>
+                    <ul>
+                        <li><?= html_escape($member['room-name']) ?></li>
+                        <li><?= html_escape($member['task-name']) ?></li>
+                        <li><?= html_escape($member['due-date']) ?></li>
+                        <li><?= html_escape($member['status']) ?></li>
+                    </ul>
+                <?php } ?>
+            </div>
+
+        </div>
         <div class="big-content">
             <div class="room-list">
                 <h3>room</h3>

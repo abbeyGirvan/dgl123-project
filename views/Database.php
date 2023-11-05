@@ -19,3 +19,9 @@ $options  = [                       // Options for how PDO works
 
 // DO NOT CHANGE ANYTHING BENEATH THIS LINE
 $dsn = "$type:host=$server;dbname=$db;port=$port;charset=$charset"; // Create DSN
+
+try {                                                               // Try following code
+    $pdo = new PDO($dsn, $username, $password, $options);           // Create PDO object
+} catch (PDOException $e) {                                         // If exception thrown
+    throw new PDOException($e->getMessage(), $e->getCode());        // Re-throw exception
+}
