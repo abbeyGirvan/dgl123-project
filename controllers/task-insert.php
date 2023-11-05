@@ -5,9 +5,9 @@ require 'db-connection.php';
 // add single quote to start and end of data
 $taskName = "'".$_POST["task-name"]."'";
 $room = "'".$_POST["room"]."'";
-// $dueDate = "'".$_POST["due-date"]."'";
+$dueDate = "'".$_POST["due-date"]."'";
 
-echo '<script> alert("hello *'.$room.'")</script>';
+echo '<script> alert("hello *'.$dueDate.'")</script>';
 
 if ($room === "'kitchen'"){
     $roomId = 1;
@@ -20,7 +20,7 @@ if ($room === "'kitchen'"){
 }
 
 // Insert record
-$sql = "INSERT INTO tasks(`room-id`, `task-name`, `account-id`) VALUES($roomId, $taskName, 1)";
+$sql = "INSERT INTO tasks(`room-id`, `task-name`, `account-id`, `due-date`) VALUES($roomId, $taskName, 1, $dueDate)";
 
 
 if ($conn->query($sql) === TRUE) {
@@ -29,6 +29,10 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+
+// go back to calling screen after 1 second
+$url = $_SERVER['HTTP_REFERER']; // right back to the referrer page from where you came.
+echo '<meta http-equiv="refresh" content="1;URL=' . $url . '">';
 
 
 $conn->close();
