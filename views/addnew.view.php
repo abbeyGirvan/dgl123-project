@@ -14,16 +14,16 @@
                 </div>
                 <div class="rooms">
                     <label for="kitchen">kitchen</label>
-                    <input type="radio" name="room" id="kitchen">
+                    <input type="radio" name="room" id="kitchen" value="kitchen">
 
                     <label for="bathroom">bathroom</label>
-                    <input type="radio" name="room" id="bathroom">
+                    <input type="radio" name="room" id="bathroom" value="bathroom">
 
                     <label for="living-room">living room</label>
-                    <input type="radio" name="room" id="living-room">
+                    <input type="radio" name="room" id="living-room" value="living-room">
 
                     <label for="other">other</label>
-                    <input type="radio" name="room" id="other">
+                    <input type="radio" name="room" id="other" value="other">
                 </div>
                 
                 <div class="date">
