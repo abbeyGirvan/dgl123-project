@@ -5,6 +5,10 @@
     //else redirect page to log-in page
 }*/
 
+function insert() {
+    
+}
+
 
 //from 'PHP&MySQL' by JON DUCKETT
 function pdo(PDO $pdo, string $sql, array $arguments = null)

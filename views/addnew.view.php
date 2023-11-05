@@ -7,7 +7,7 @@
     <main>
         <?php require 'partials/header.php'; ?>
         <div class="content-wrap">
-            <form class="create-task" action="">
+            <form class="create-task" action="controllers/task-insert.php" method="post">
                 <div class="custom-input">
                     <label for="task-name">Task:</label>
                     <input type="text" id="task-name">
@@ -22,14 +22,7 @@
                     <input type="radio" name="other" id="other">
                     <label for="other">other</label>
                 </div>
-                <div class="users">
-                    <input type="radio" name="neil" id="neil">
-                    <label for="neil">neil</label>
-                    <input type="radio" name="andrew" id="andrew">
-                    <label for="andrew">andrew</label>
-                    <input type="radio" name="living room" id="living-room">
-                    <label for="nicky">nicky</label>
-                </div>
+                
                 <div class="date">
                     <label for="date">Due On or By:</label>
                     <input type="date">
