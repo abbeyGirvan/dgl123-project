@@ -1,8 +1,19 @@
 <?php
 
 require 'partials/head.php';
-require 'Database.php';
-require 'functions.php';
+// require 'Database.php';
+// require 'functions.php';
+$servername = "localhost";
+$username = "testuser";
+$password = "badpassword";
+$dbname = "dgl123-project";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 
 $sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`status`
@@ -11,9 +22,13 @@ $sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`st
     AND rooms.`id` = tasks.`room-id`
     ORDER BY 1,2 ASC;";
 
+$result = $conn->query($sql);
+
+
 //$taskList = pdo($pdo, $sql)->fetchAll();
-$statement = $pdo->query($sql);
-$members   = $statement->fetchAll();
+//$statement = $pdo->query($sql);
+
+//$members   = $statement->fetchAll();
 
 /*
 <?php foreach ($members as $member) { ?>
@@ -23,6 +38,15 @@ $members   = $statement->fetchAll();
                     <?= html_escape($member['task-name']) ?>
                     <?= html_escape($member['due-date']) ?>
                 </p>
+
+                <?php foreach ($members as $member) { ?>
+                    <ul>
+                        <li><?= html_escape($member['room-name']) ?></li>
+                        <li><?= html_escape($member['task-name']) ?></li>
+                        <li><?= html_escape($member['due-date']) ?></li>
+                        <li><?= html_escape($member['status']) ?></li>
+                    </ul>
+                <?php } ?>
             <?php } ?>
 */
 
@@ -36,19 +60,36 @@ $members   = $statement->fetchAll();
             <h2>All Tasks</h2>
         </div>
         <!--probably make this into a table setup rather than using grid (good css practice though)-->
-        <div>
-            <div class="room-list">
-                <?php foreach ($members as $member) { ?>
-                    <ul>
-                        <li><?= html_escape($member['room-name']) ?></li>
-                        <li><?= html_escape($member['task-name']) ?></li>
-                        <li><?= html_escape($member['due-date']) ?></li>
-                        <li><?= html_escape($member['status']) ?></li>
-                    </ul>
-                <?php } ?>
-            </div>
 
+
+        <div class="content-wrap">
+            <div class="room-list">
+                <table>
+                    <tr>
+                        <th>ROOM</th>
+                        <th>TASK</th>
+                        <th>DUE</th>
+                    </tr>
+                    <?php
+                    if ($result->num_rows > 0) {
+                        // output data of each row
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<tr>" .
+                                "<td>" . $row["room-name"] . "</td>" .
+                                "<td>" . $row["task-name"] . "</td>" .
+                                "<td>" . $row["due-date"] . "</td" .
+                                "</tr>";
+                        }
+                    } else {
+                        echo "0 results";
+                    }
+                    $conn->close();
+                    ?>
+                </table>
+            </div>
         </div>
+
+
         <div class="big-content">
             <div class="room-list">
                 <h3>room</h3>
