@@ -12,7 +12,7 @@
             <div class="room-list">
                 <h3>room</h3>
                 <ul>
-                    <li>kitchen</li>
+                    <li>bedroom</li>
                     <li>kitchen</li>
                     <li>bathroom</li>
                     <li>living room</li>
