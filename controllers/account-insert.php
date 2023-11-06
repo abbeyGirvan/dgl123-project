@@ -13,6 +13,8 @@ $confirmPassword = "'" . $_POST["confirm-password"] . "'";
 
 if ($password !== $confirmPassword) {
     echo '<script> alert("passwords do not match")</script>';
+    $url = $_SERVER['HTTP_REFERER']; // right back to the referrer page from where you came.
+    echo '<meta http-equiv="refresh" content="1;URL=' . $url . '">';
 } else {
 
     // Insert record
