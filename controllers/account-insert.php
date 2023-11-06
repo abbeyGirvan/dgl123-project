@@ -11,21 +11,21 @@ $confirmPassword = "'" . $_POST["confirm-password"] . "'";
 
 //echo '<script> alert("hello *'.$dueDate.'")</script>';
 
-
+if ($password !== $confirmPassword) {
+    echo '<script> alert("passwords do not match")</script>';
+} else {
+    
     // Insert record
-    $sql = "INSERT INTO accounts(`firstname`, `surname`, `email`, `password`)
-VALUES($firstName, $lastName, $email, $password)";
+    $sql = "INSERT INTO accounts(`firstname`, `surname`, `email`, `password`) VALUES($firstName, $lastName, $email, $password)";
 
-
-
+    //display message if new reccord created or display error if not
     if ($conn->query($sql) === TRUE) {
         //echo "New record created successfully";
         echo '<script> alert("New record created successfully") </script>';
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
-
-
+}
 
 
 // go back to calling screen after 1 second
