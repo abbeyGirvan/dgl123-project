@@ -14,7 +14,9 @@ $confirmPassword = "'".$_POST["confirm-password"]."'";
 
 
 // Insert record
-$sql = "INSERT INTO tasks(`room-id`, `task-name`, `account-id`, `due-date`) VALUES($roomId, $taskName, 1, $dueDate)";
+$sql = "INSERT INTO accounts(`firstname`, `surname`, `email`, `password`)
+VALUES($firstName, $lastName, $email, $password)";
+
 
 
 if ($conn->query($sql) === TRUE) {
