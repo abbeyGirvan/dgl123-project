@@ -14,7 +14,7 @@ $confirmPassword = "'" . $_POST["confirm-password"] . "'";
 if ($password !== $confirmPassword) {
     echo '<script> alert("passwords do not match")</script>';
 } else {
-    
+
     // Insert record
     $sql = "INSERT INTO accounts(`firstname`, `surname`, `email`, `password`) VALUES($firstName, $lastName, $email, $password)";
 
@@ -22,15 +22,14 @@ if ($password !== $confirmPassword) {
     if ($conn->query($sql) === TRUE) {
         //echo "New record created successfully";
         echo '<script> alert("New record created successfully") </script>';
+        //redirect to index.php after creating an account
+        printf("<script>location.href='../index.php'</script>");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
 }
 
 
-// go back to calling screen after 1 second
-$url = $_SERVER['HTTP_REFERER']; // right back to the referrer page from where you came.
-echo '<meta http-equiv="refresh" content="1;URL=' . $url . '">';
 
 
 $conn->close();
