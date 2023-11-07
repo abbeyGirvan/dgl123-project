@@ -1,5 +1,4 @@
 <?php
-
 require 'db-connection.php';
 require 'functions.php';
 
@@ -42,9 +41,8 @@ if ($resultEmail->num_rows >= 1) {
             echo '<script> alert("New record created successfully") </script>';
 
             login();
-            $sqlAccount = "SELECT account-id FROM accounts WHERE `email` = $email;";
+            $sqlAccount = "SELECT `id` FROM accounts WHERE `email` = $email;";
             $resultAccount = $conn->query($sqlAccount);
-            echo '<script> alert("hello *' . $resultAccount . '")</script>';
 
             $_SESSION['current_user'] = $resultAccount;
 
