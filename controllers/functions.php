@@ -29,6 +29,21 @@ function html_escape($text): string
     return htmlspecialchars($text, ENT_QUOTES, 'UTF-8', false); // Return escaped string
 }
 
+//remember user passed login
+function login(){
+    session_regenerate_id(true);
+    $_SESSION['logged_in'] = true;
+}
+
+//check user is logged in
+function require_login($logged_in){
+    if ($logged_in === false){
+        printf("<script>location.href='../views/login.php'</script>");
+        exit;
+    }
+}
+
+
 
 //from Laracast videos 'die and dump'
 function dd($value)
