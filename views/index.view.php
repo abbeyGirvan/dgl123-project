@@ -14,32 +14,6 @@ $sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`st
 
 $result = $conn->query($sql);
 
-
-//$taskList = pdo($pdo, $sql)->fetchAll();
-//$statement = $pdo->query($sql);
-
-//$members   = $statement->fetchAll();
-
-/*
-<?php foreach ($members as $member) { ?>
-                <p>
-                    <?= html_escape($member['status']) ?>
-                    <?= html_escape($member['room-name']) ?>
-                    <?= html_escape($member['task-name']) ?>
-                    <?= html_escape($member['due-date']) ?>
-                </p>
-
-                <?php foreach ($members as $member) { ?>
-                    <ul>
-                        <li><?= html_escape($member['room-name']) ?></li>
-                        <li><?= html_escape($member['task-name']) ?></li>
-                        <li><?= html_escape($member['due-date']) ?></li>
-                        <li><?= html_escape($member['status']) ?></li>
-                    </ul>
-                <?php } ?>
-            <?php } ?>
-*/
-
 ?>
 
 
