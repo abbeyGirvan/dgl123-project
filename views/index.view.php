@@ -68,7 +68,7 @@ $result = $conn->query($sql);
                             echo "<tr>" .
                                 "<td>" . $row["room-name"] . "</td>" .
                                 "<td>" . $row["task-name"] . "</td>" .
-                                "<td>" . $row["due-date"] . "</td" .
+                                "<td>" . $row["due-date"] . "</td>" .
                                 "<td>" . $row["status"] . "</td" .
                                 "</tr>";
                         }

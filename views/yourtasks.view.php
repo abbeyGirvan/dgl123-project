@@ -40,7 +40,7 @@ $result = $conn->query($sql);
                                 "<td>" . $row["due-date"] . "</td" .
                                 "<td>" . $row["room-name"] . "</td>" .
                                 "<td>" . $row["task-name"] . "</td>" .
-                                "<td>" . $row["status"] . "</td" .
+                                "<td>" . $row["status"] . "</td>" .
                                 "</tr>";
                         }
                     } else {
