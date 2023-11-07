@@ -115,14 +115,20 @@ nav .logo {
 }
 /* ---------- 3. task master-list ---------- */
 /*also applies to your tasks*/
-.room-list {
-  background: pink;
-}
+
 .output-table {
   width: 100%;
   border: 1px solid #05636f;
+  text-align: center;
 }
-
+.output-table th{
+  background: #05636f;
+  color: #fffdfc;
+  padding: 0.5rem;
+}
+.output-table tr:nth-child(odd){
+  background: #CAEEEC;
+}
 
 /* ---------- 4. create new task ---------- */
 .create-task {

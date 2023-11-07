@@ -20,7 +20,8 @@ $result = $conn->query($sql);
 
         <?php require 'partials/header.php'; ?>
         <div class="content-wrap">
-            <h2>Neil's ToDo List</h2>
+            <h2>Immending Doom</h2>
+            <h3>To-Do List by Date</h3>
         </div>
 
         <div class="content-wrap">
@@ -37,7 +38,7 @@ $result = $conn->query($sql);
                         // output data of each row
                         while ($row = $result->fetch_assoc()) {
                             echo "<tr>" .
-                                "<td>" . $row["due-date"] . "</td" .
+                                "<td>" . $row["due-date"] . "</td>" .
                                 "<td>" . $row["room-name"] . "</td>" .
                                 "<td>" . $row["task-name"] . "</td>" .
                                 "<td>" . $row["status"] . "</td>" .
