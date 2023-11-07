@@ -4,7 +4,6 @@ require 'partials/head.php';
 
 require 'controllers/db-connection.php';
 
-
 $sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`status`
     FROM tasks, rooms
     WHERE tasks.`account-id` = 1

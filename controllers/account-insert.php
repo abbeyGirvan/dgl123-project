@@ -37,8 +37,17 @@ if ($resultEmail->num_rows >= 1) {
     
         //display message if new reccord created or display error if not
         if ($conn->query($sql) === TRUE) {
+
             //echo "New record created successfully";
             echo '<script> alert("New record created successfully") </script>';
+
+            login();
+            $sqlAccount = "SELECT account-id FROM accounts WHERE `email` = $email;";
+            $resultAccount = $conn->query($sqlAccount);
+            echo '<script> alert("hello *' . $resultAccount . '")</script>';
+
+            $_SESSION['current_user'] = $resultAccount;
+
             //redirect to index.php after creating an account
             printf("<script>location.href='../index.php'</script>");
         } else {

@@ -30,6 +30,9 @@ if ($resultEmail->num_rows < 1) {
         $url = $_SERVER['HTTP_REFERER']; // right back to the referrer page from where you came.
         echo '<meta http-equiv="refresh" content="1;URL=' . $url . '">';
     } else {
+        
+        login();
+
         // redirect user to home page after logging in
         printf("<script>location.href='../index.php'</script>");
     }

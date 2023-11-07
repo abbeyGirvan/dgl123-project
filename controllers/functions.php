@@ -1,14 +1,5 @@
 <?php
 
-/*function signedIn(/*cookie value of signed in firstname? ) {
-    //if has value !null in cookie for firstname, continue on  
-    //else redirect page to log-in page
-}*/
-
-
-
-
-
 //from 'PHP&MySQL' by JON DUCKETT
 function pdo(PDO $pdo, string $sql, array $arguments = null)
 {
