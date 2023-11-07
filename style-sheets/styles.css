@@ -115,22 +115,14 @@ nav .logo {
 }
 /* ---------- 3. task master-list ---------- */
 /*also applies to your tasks*/
-.big-content ul {
-  list-style-type: none;
-  margin-left: 0;
-  padding: 0;
+.room-list {
+  background: pink;
 }
-.big-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr 0.5fr;
-  grid-template-rows: repeat(2, 1fr);
+.output-table {
+  width: 100%;
+  border: 1px solid #05636f;
 }
-.status {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  justify-content: space-around;
-}
+
 
 /* ---------- 4. create new task ---------- */
 .create-task {

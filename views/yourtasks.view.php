@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 
 <body>
     <main>
-        
+
         <?php require 'partials/header.php'; ?>
         <div class="content-wrap">
             <h2>Neil's ToDo List</h2>
@@ -25,7 +25,7 @@ $result = $conn->query($sql);
 
         <div class="content-wrap">
             <div class="room-list">
-                <table>
+                <table class="output-table">
                     <tr>
                         <th>DUE</th>
                         <th>ROOM</th>

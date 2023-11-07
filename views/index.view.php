@@ -54,7 +54,7 @@ $result = $conn->query($sql);
 
         <div class="content-wrap">
             <div class="room-list">
-                <table>
+                <table class="output-table">
                     <tr>
                         <th>ROOM</th>
                         <th>TASK</th>
