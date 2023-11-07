@@ -21,7 +21,7 @@ $result = $conn->query($sql);
     <main>
         <?php require 'partials/header.php'; ?>
         <div class="content-wrap">
-            <h2>All Tasks</h2>
+            <h2>To-Do List by Room</h2>
         </div>
         <!--probably make this into a table setup rather than using grid (good css practice though)-->
 

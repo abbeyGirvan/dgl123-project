@@ -20,8 +20,7 @@ $result = $conn->query($sql);
 
         <?php require 'partials/header.php'; ?>
         <div class="content-wrap">
-            <h2>Immending Doom</h2>
-            <h3>To-Do List by Date</h3>
+            <h2>To-Do List by Date</h2>
         </div>
 
         <div class="content-wrap">
