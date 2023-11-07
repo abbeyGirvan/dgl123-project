@@ -80,44 +80,6 @@ $result = $conn->query($sql);
                 </table>
             </div>
         </div>
-
-
-        <div class="big-content">
-            <div class="room-list">
-                <h3>room</h3>
-                <ul>
-                    <li>bedroom</li>
-                    <li>kitchen</li>
-                    <li>bathroom</li>
-                    <li>living room</li>
-                </ul>
-            </div>
-            <div class="tasks">
-                <h3>task</h3>
-                <ul>
-                    <li>empty dishwasher</li>
-                    <li>load dishwasher</li>
-                    <li>clean shower</li>
-                    <li>sweep floors</li>
-                </ul>
-            </div>
-            <div class="assign">
-                <h3>assigned to</h3>
-                <ul>
-                    <li>Neil</li>
-                    <li>Neil</li>
-                    <li>Andrew</li>
-                    <li>Renee</li>
-                </ul>
-            </div>
-            <div class="status">
-                <h3>status</h3>
-                <div><input type="checkbox">Oct 20</div>
-                <div><input type="checkbox">Oct 20</div>
-                <div><input type="checkbox">Oct 20</div>
-                <div><input type="checkbox">Oct 20</div>
-            </div>
-        </div>
     </main>
     <?php require 'partials/footer.php'; ?>
 </body>
