@@ -3,15 +3,15 @@
 require 'db-connection.php';
 
 // add single quote to start and end of data
-$taskName = "'".$_POST["task-name"]."'";
-$room = "'".$_POST["room"]."'";
-$dueDate = "'".$_POST["due-date"]."'";
+$taskName = "'" . $_POST["task-name"] . "'";
+$room = "'" . $_POST["room"] . "'";
+$dueDate = "'" . $_POST["due-date"] . "'";
 
-echo '<script> alert("hello *'.$dueDate.'")</script>';
+echo '<script> alert("hello *' . $dueDate . '")</script>';
 
-if ($room === "'kitchen'"){
+if ($room === "'kitchen'") {
     $roomId = 1;
-} else if ($room === "'bathroom'"){
+} else if ($room === "'bathroom'") {
     $roomId = 2;
 } else if ($room === "'living-room'") {
     $roomId = 3;

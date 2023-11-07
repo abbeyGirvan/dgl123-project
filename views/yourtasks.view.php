@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-require 'partials/head.php'; 
+require 'partials/head.php';
 
 require 'controllers/db-connection.php';
 

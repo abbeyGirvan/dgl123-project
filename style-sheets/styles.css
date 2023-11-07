@@ -121,13 +121,13 @@ nav .logo {
   border: 1px solid #05636f;
   text-align: center;
 }
-.output-table th{
+.output-table th {
   background: #05636f;
   color: #fffdfc;
   padding: 0.5rem;
 }
-.output-table tr:nth-child(odd){
-  background: #CAEEEC;
+.output-table tr:nth-child(odd) {
+  background: #caeeec;
 }
 
 /* ---------- 4. create new task ---------- */
@@ -212,7 +212,6 @@ footer {
   font-size: 18px;
 }
 
-
 /* ---------- 7. login ---------- */
 .login,
 .signup,
@@ -229,9 +228,8 @@ footer {
 .log-submit,
 .lower-container button {
   /* margin-top: 15px; */
-  background-color: #1F3F43;
+  background-color: #1f3f43;
   color: #fffdfc;
   border: none;
   padding: 10px 20px;
 }
-
