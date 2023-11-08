@@ -7,7 +7,6 @@ $taskName = "'" . $_POST["task-name"] . "'";
 $room = "'" . $_POST["room"] . "'";
 $dueDate = "'" . $_POST["due-date"] . "'";
 
-echo '<script> alert("hello *' . $dueDate . '")</script>';
 
 if ($room === "'kitchen'") {
     $roomId = 1;
