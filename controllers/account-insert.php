@@ -54,11 +54,6 @@ if ($resultEmail->num_rows >= 1) {
     }
 }
 
-
-
-
-
-
 $conn->close();
 
 

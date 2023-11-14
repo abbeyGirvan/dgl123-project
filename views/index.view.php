@@ -34,16 +34,20 @@ $result = $conn->query($sql);
                         <th>TASK</th>
                         <th>DUE</th>
                         <th>STATUS</th>
+                        <th colspan="2">UPDATE</th>
                     </tr>
                     <?php
                     if ($result->num_rows > 0) {
                         // output data of each row
                         while ($row = $result->fetch_assoc()) {
-                            echo "<tr>" .
+                            echo "<tr> <form class='update-task' action='controllers/task-update.php' method='post'>" .
                                 "<td>" . $row["room-name"] . "</td>" .
                                 "<td>" . $row["task-name"] . "</td>" .
                                 "<td>" . $row["due-date"] . "</td>" .
-                                "<td>" . $row["status"] . "</td" .
+                                "<td>" . $row["status"] . "</td>" .
+                                "<td>" . "<input type='checkbox'>" . "</td>" . 
+                                "<td>" . "<input class='btn' type='submit' value='change status'></td>" .
+                                "</form>" .
                                 "</tr>";
                         }
                     } else {
