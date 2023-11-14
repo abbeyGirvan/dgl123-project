@@ -46,8 +46,8 @@ if ($resultEmail->num_rows >= 1) {
 
             $_SESSION['current_user'] = $resultAccount;
 
-            //redirect to index.php after creating an account
-            printf("<script>location.href='../index.php'</script>");
+            //redirect to login.php after creating an account
+            printf("<script>location.href='../login.php'</script>");
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
