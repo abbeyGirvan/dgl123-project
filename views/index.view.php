@@ -8,7 +8,7 @@ require 'controllers/db-connection.php';
 
 $sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`status`
     FROM tasks, rooms
-    WHERE tasks.`account-id` = 1
+    WHERE tasks.`account-id` = 1 /* change number to session-firstname */
     AND rooms.`id` = tasks.`room-id`
     ORDER BY 1,2 ASC;";
 

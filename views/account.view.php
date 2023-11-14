@@ -7,19 +7,16 @@
             <div>
                 <h2>YOU</h2>
                 <div class="current-user">
-                    <span class="placeholder"></span>
-                    <h3>Neil</h3>
-                    <h4>nickname:</h4>
-                    <p>'run-away'</p>
-                    <span class="placeholder colour-block"></span>
+                    <h3>Neil</h3> <!-- change to session-firstname -->
+                    <h3>Josten</h3> <!-- change to session-lastname -->
                 </div>
             </div>
             <div class="account-info">
                 <h2>ACCOUNT INFO</h2>
                 <h3>email:</h3>
-                <p>njosten@palmetofoxes.com</p>
-                <h3>password</h3>
-                <p>*********</p>
+                <p>njosten@palmetofoxes.com</p> <!-- change to session-email -->
+                <h3>password</h3> 
+                <p>*********</p> <!-- change to session-password -->
             </div>
 
 

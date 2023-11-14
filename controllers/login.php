@@ -16,6 +16,8 @@ $sqlMatch = "SELECT *
 FROM accounts
 WHERE `email` = $email AND `password` = $password;";
 
+// sqlName = select first-name from accounts where `email` = $email;
+
 $resultEmail = $conn->query($sqlEmail);
 $resultMatch = $conn->query($sqlMatch);
 
@@ -32,6 +34,7 @@ if ($resultEmail->num_rows < 1) {
     } else {
         
         login();
+        //session-firstname = sqlname; (do the same for last name, email, password)
 
         // redirect user to home page after logging in
         printf("<script>location.href='../index.php'</script>");
