@@ -45,8 +45,8 @@ $result = $conn->query($sql);
                                 "<td>" . $row["task-name"] . "</td>" .
                                 "<td>" . $row["due-date"] . "</td>" .
                                 "<td>" . $row["status"] . "</td>" .
-                                "<td>" . "<input type='checkbox'>" . "</td>" . 
-                                "<td>" . "<input class='btn' type='submit' value='change status'></td>" .
+                                "<td>" . "<input type='checkbox' name='check'>" . "</td>" . 
+                                "<td>" . "<input class='btn' type='submit' value='reverse status'></td>" .
                                 "</form>" .
                                 "</tr>";
                         }
