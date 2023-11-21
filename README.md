@@ -6,6 +6,16 @@ Abbey Girvan
 
 ## STATUS:
 
+**ASSIGNMENT 8 -- DEPLOYMENT**
+
+View site as deployed on amazon web services [HERE](https://dgl123.agirvan.imgd.ca/sem-project-m3/dgl123-project-deployM3/)
+
+View Github repo for deployment branch [HERE](https://github.com/abbeyGirvan/dgl123-project/tree/deployM3)
+
+View Github repo for main branch [HERE](https://github.com/abbeyGirvan/dgl123-project/tree/main)
+
+*self assessment: 8/8*
+
 **Completed** Milestone 3
 
 1. Database creation and linkage
