@@ -6,7 +6,7 @@ require 'partials/head.php';
 require 'controllers/db-connection.php';
 
 
-$sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`status`
+$sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`status`, tasks.`id`
     FROM tasks, rooms
     WHERE tasks.`account-id` = 1 /* change number to session-firstname */
     AND rooms.`id` = tasks.`room-id`
@@ -34,21 +34,37 @@ $result = $conn->query($sql);
                         <th>TASK</th>
                         <th>DUE</th>
                         <th>STATUS</th>
-                        <th colspan="2">UPDATE</th>
+                        <th>UPDATE</th>
+                        <th>DELETE</th>
+                        <th>SUBMIT</th>
                     </tr>
                     <?php
                     if ($result->num_rows > 0) {
                         // output data of each row
                         while ($row = $result->fetch_assoc()) {
-                            echo "<tr> <form class='update-task' action='controllers/task-update.php' method='post'>" .
+                            echo "<tr> 
+                            <form class='update-task' action='controllers/task-update.php' method='post'>" .
                                 "<td>" . $row["room-name"] . "</td>" .
                                 "<td>" . $row["task-name"] . "</td>" .
                                 "<td>" . $row["due-date"] . "</td>" .
                                 "<td>" . $row["status"] . "</td>" .
-                                "<td>" . "<input type='checkbox' name='check'>" . "</td>" . 
-                                "<td>" . "<input class='btn' type='submit' value='reverse status'></td>" .
-                                "</form>" .
-                                "</tr>";
+                                "<td> 
+                                    <select name='status-opt' id='status-opt'>
+                                        <option value='not-done'>not done</option>
+                                        <option value='in-progress'>in progress</option>
+                                        <option value='stuck'>stuck</option>
+                                        <option value='done'>done</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input class='delete' type='checkbox' value='delete task'>
+                                </td>
+                                <td>
+                                    <input class='btn' type='submit' value='SUBMIT CHANGES'>
+                                </td>" .
+                                "<input type='hidden' name='task-id' id='task-id'" . $row["id"] . ">" .
+                            "</form>" . 
+                            "</tr>";
                         }
                     } else {
                         echo "0 results";
