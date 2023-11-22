@@ -4,7 +4,7 @@ require 'partials/head.php';
 
 require 'controllers/db-connection.php';
 
-$sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`status`
+$sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`status`, tasks.`id`
     FROM tasks, rooms
     WHERE tasks.`account-id` = 1 /* change number to session-firstname */
     AND rooms.`id` = tasks.`room-id`
@@ -30,16 +30,39 @@ $result = $conn->query($sql);
                         <th>ROOM</th>
                         <th>TASK</th>
                         <th>STATUS</th>
+                        <th>UPDATE</th>
+                        <th>SUBMIT</th>
+                        <th>DELETE</th>
                     </tr>
                     <?php
                     if ($result->num_rows > 0) {
                         // output data of each row
                         while ($row = $result->fetch_assoc()) {
                             echo "<tr>" .
+                                "<form class='update-task' action='controllers/task-update.php' method='post'>" .
                                 "<td>" . $row["due-date"] . "</td>" .
                                 "<td>" . $row["room-name"] . "</td>" .
                                 "<td>" . $row["task-name"] . "</td>" .
                                 "<td>" . $row["status"] . "</td>" .
+                                "<td> 
+                                    <select name='status-opt' id='status-opt'>
+                                        <option value='not-done'>not done</option>
+                                        <option value='in-progress'>in progress</option>
+                                        <option value='stuck'>stuck</option>
+                                        <option value='done'>done</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <input class='btn' type='submit' value='UPDATE STATUS'>
+                                </td>" .
+                                "<input type='hidden' name='task-id' id='task-id' value='".$row["id"]."'". ">" .
+                                "</form>" .
+                                "<form class='delete-task' action='controllers/task-delete.php' method='post'>
+                                    <td>
+                                        <input class='btn--delete' type='submit' value='DELETE'> 
+                                    </td>
+                                <input type='hidden' name='task-id' id='task-id' value='".$row["id"]."'". ">
+                                </form>".
                                 "</tr>";
                         }
                     } else {
