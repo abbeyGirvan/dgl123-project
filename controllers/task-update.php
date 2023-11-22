@@ -4,14 +4,7 @@ require 'db-connection.php';
 require 'functions.php';
 
 // add single quote to start and end of data
-$status = "'" . $_POST["status-opt"] . "'";
-
-if ($_POST["delete"] != null) {
-    $delete = "'" . $_POST["delete"] . "'";
-} else {
-    //do nothing!
-}
-
+$status = "'" . $_POST["status-opt"] . "'";  
 $taskID = "'" . $_POST["task-id"] . "'";
 
 
