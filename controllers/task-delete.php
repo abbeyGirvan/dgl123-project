@@ -4,27 +4,18 @@ require 'db-connection.php';
 require 'functions.php';
 
 // add single quote to start and end of data
-$status = "'" . $_POST["status-opt"] . "'";
-
-if ($_POST["delete"] != null) {
-    $delete = "'" . $_POST["delete"] . "'";
-} else {
-    //do nothing!
-}
-
 $taskID = "'" . $_POST["task-id"] . "'";
 
 
 
-// update record
-$sql = "UPDATE `tasks`
-SET `status` = $status
-WHERE `id` = $taskID;";
+// delete record
+$sql = "DELETE FROM `tasks` 
+        WHERE `tasks`.`id` = $taskID";
 
 
 if ($conn->query($sql) === TRUE) {
     //echo "New record created successfully";
-    echo '<script> alert("Record updated :)") </script>';
+    echo '<script> alert("record deleted!") </script>';
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
