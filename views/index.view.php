@@ -57,14 +57,17 @@ $result = $conn->query($sql);
                                     </select>
                                 </td>
                                 <td>
-                                    <input class='delete' type='checkbox' value='delete task'>
+                                    <input class='delete' type='checkbox' 
+                                    name='delete'
+                                    id='delete'
+                                    value='delete task'>
                                 </td>
                                 <td>
                                     <input class='btn' type='submit' value='SUBMIT CHANGES'>
                                 </td>" .
-                                "<input type='hidden' name='task-id' id='task-id'" . $row["id"] . ">" .
-                            "</form>" . 
-                            "</tr>";
+                                "<input type='hidden' name='task-id' id='task-id' value='".$row["id"]."'". ">" .
+                                "</form>" .
+                                "</tr>";
                         }
                     } else {
                         echo "0 results";
