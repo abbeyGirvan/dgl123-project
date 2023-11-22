@@ -6,7 +6,12 @@ require 'functions.php';
 // add single quote to start and end of data
 $status = "'" . $_POST["status-opt"] . "'";
 
-//$delete = "'" . $_POST["delete"] . "'";
+if ($_POST["delete"] != null) {
+    $delete = "'" . $_POST["delete"] . "'";
+} else {
+    //do nothing!
+}
+
 $taskID = "'" . $_POST["task-id"] . "'";
 
 
@@ -30,5 +35,3 @@ echo '<meta http-equiv="refresh" content="1;URL=' . $url . '">';
 
 
 $conn->close();
-
-

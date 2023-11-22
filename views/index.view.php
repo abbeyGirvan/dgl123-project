@@ -35,8 +35,8 @@ $result = $conn->query($sql);
                         <th>DUE</th>
                         <th>STATUS</th>
                         <th>UPDATE</th>
-                        <th>DELETE</th>
                         <th>SUBMIT</th>
+                        <th>DELETE</th>
                     </tr>
                     <?php
                     if ($result->num_rows > 0) {
@@ -57,16 +57,15 @@ $result = $conn->query($sql);
                                     </select>
                                 </td>
                                 <td>
-                                    <input class='delete' type='checkbox' 
-                                    name='delete'
-                                    id='delete'
-                                    value='delete task'>
-                                </td>
-                                <td>
                                     <input class='btn' type='submit' value='SUBMIT CHANGES'>
                                 </td>" .
                                 "<input type='hidden' name='task-id' id='task-id' value='".$row["id"]."'". ">" .
                                 "</form>" .
+                                "<form class='delete-task' action='controllers/task-delete.php' method='post'>
+                                    <td>
+                                        <input class='btn--delete' type='submit' value='DELETE'> 
+                                    </td>
+                                </form>".
                                 "</tr>";
                         }
                     } else {
