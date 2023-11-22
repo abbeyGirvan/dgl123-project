@@ -57,7 +57,7 @@ $result = $conn->query($sql);
                                     </select>
                                 </td>
                                 <td>
-                                    <input class='btn' type='submit' value='SUBMIT CHANGES'>
+                                    <input class='btn' type='submit' value='UPDATE STATUS'>
                                 </td>" .
                                 "<input type='hidden' name='task-id' id='task-id' value='".$row["id"]."'". ">" .
                                 "</form>" .
