@@ -65,6 +65,7 @@ $result = $conn->query($sql);
                                     <td>
                                         <input class='btn--delete' type='submit' value='DELETE'> 
                                     </td>
+                                <input type='hidden' name='task-id' id='task-id' value='".$row["id"]."'". ">
                                 </form>".
                                 "</tr>";
                         }
