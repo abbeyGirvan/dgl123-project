@@ -2,6 +2,10 @@
 
 This plan is based on personal notes about what is/isn't working at the moment in my project, in addition to the feedback I received from peers during critique on Nov 7. The ordered list below does represent priority of features to be completed. Items that are considered 'extra' and not essential to the MVP are noted as *if time allows*.
 
+### status
+
+task 1-2 complete.
+
 ## features and fixes
 
 1. update-able tasks: the task lists need to have a column to update the status of the task. Allow users to change the status to possible options: not done, in progress, blocked, done.
