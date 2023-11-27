@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 
 require 'db-connection.php';
 
@@ -19,7 +21,7 @@ if ($room === "'kitchen'") {
 }
 
 // Insert record
-$sql = "INSERT INTO tasks(`room-id`, `task-name`, `account-id`, `due-date`) VALUES($roomId, $taskName, 1, $dueDate)";
+$sql = "INSERT INTO tasks(`room-id`, `task-name`, `account-id`, `due-date`) VALUES($roomId, $taskName, $_SESSION[id], $dueDate)";
 
 
 if ($conn->query($sql) === TRUE) {
