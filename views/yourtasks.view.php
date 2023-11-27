@@ -6,7 +6,7 @@ require 'controllers/db-connection.php';
 
 $sql = "SELECT rooms.`room-name`, tasks.`task-name`, tasks.`due-date`, tasks.`status`, tasks.`id`
     FROM tasks, rooms
-    WHERE tasks.`account-id` = 1 /* change number to session-firstname */
+    WHERE tasks.`account-id` = $_SESSION[id] /* change number to session-firstname */
     AND rooms.`id` = tasks.`room-id`
     ORDER BY 3 ASC;";
 
