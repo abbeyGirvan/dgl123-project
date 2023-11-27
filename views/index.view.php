@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 require 'partials/head.php';
 // require 'Database.php';

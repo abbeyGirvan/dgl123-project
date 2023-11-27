@@ -5,7 +5,7 @@
         <?php require 'partials/landing.header.php'; ?>
 
         <div class="content-wrap">
-            <form class="login" action="controllers/login.php" method="post">
+            <form class="login" action="controllers/login-c.php" method="post">
                 <label for="email">email address</label>
                 <input type="text" name="email">
                 <label for="password">password</label>
