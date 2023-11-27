@@ -16,10 +16,23 @@ $sqlMatch = "SELECT *
 FROM accounts
 WHERE `email` = $email AND `password` = $password;";
 
-// sqlName = select first-name from accounts where `email` = $email;
+$sqlUser = "SELECT id
+FROM accounts
+WHERE email = $email;";
+
+
+
 
 $resultEmail = $conn->query($sqlEmail);
 $resultMatch = $conn->query($sqlMatch);
+$resultUser  = $conn->query($sqlUser);
+
+$userID = $resultUser->fetch_assoc();
+
+$userID["id"];
+//dd($userID["id"]);
+$_SESSION['id'] = $userID["id"];
+
 
 
 if ($resultEmail->num_rows < 1) {
