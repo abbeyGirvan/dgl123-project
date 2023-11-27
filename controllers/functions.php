@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 
 //from 'PHP&MySQL' by JON DUCKETT
 function pdo(PDO $pdo, string $sql, array $arguments = null)
