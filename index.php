@@ -5,5 +5,8 @@ session_start();
 $heading = 'Home';
 
 
-
-require "views/index.view.php";
+if ($_SESSION['id'] != null) {
+    require "views/index.view.php";
+} else {
+    printf("<script>location.href='../login.php'</script>");
+}
