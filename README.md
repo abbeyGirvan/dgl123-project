@@ -4,7 +4,25 @@ dgl-123 final project
 
 Abbey Girvan
 
+## ABOUT USAGE:
+
+This is a basic task management site. This site is for educational purposes and is a demonstration of learning through course DGL123 at North Island College. As such it is not completely polished or secure. Use caution using this code in your own projects.
+
+Must be connected to a SQL database for functionality to work. Database structure used includes an Accounts table, Tasks table, and Rooms table. Tasks is the primary table with accounts and rooms linked with foreign keys. To connect your database to use this code, see *controllers/db-connection.php*, add your server name, username, password for user, and database name. 
+
+*Controllers/functions.php* uses code from Jeffrey Wray's Laracast videos, and PHP&MySQL textbook by JON DUCKETT as well as personally written functions.
+
+To deploy this code on a server outside your local environment please see *documentation/deploy-instruction.md*
+
+
+
 ## STATUS:
+
+**Completed** Milestone 4
+
+1. users can update and delete tasks
+2. users can log in and now see only data relating to their account id
+3. users can log out using the LOGOUT button top right
 
 **Completed** Milestone 3
 
