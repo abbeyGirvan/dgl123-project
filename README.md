@@ -50,6 +50,8 @@ The outcome should be a working interface, in the sense that it's rendered via P
 
 *see README-assignment9.md for details regarding this assignment*
 
+self eval: 6.8 / 8
+
 ### November 1st lab
 
 Flowcharting logic for dynamic pages. For flowchart images see MS word document included in documentation folder, file name Lab9a. 
