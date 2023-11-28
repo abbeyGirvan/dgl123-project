@@ -46,6 +46,10 @@ This milestone focuses on the design and implementation of the UI elements for y
 
 The outcome should be a working interface, in the sense that it's rendered via PHP in a web browser.  You can expect to dummy up an interaction to show the screens as if a user were logged in, for example, by supplying mock data that will later come from a database.
 
+### Assignment 9 -- November 28
+
+*see README-assignment9.md for details regarding this assignment*
+
 ### November 1st lab
 
 Flowcharting logic for dynamic pages. For flowchart images see MS word document included in documentation folder, file name Lab9a. 
