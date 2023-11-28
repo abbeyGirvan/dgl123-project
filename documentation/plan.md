@@ -4,7 +4,7 @@ This plan is based on personal notes about what is/isn't working at the moment i
 
 ### status
 
-task 1-2 complete.
+task 1-4 complete.
 
 ## features and fixes
 
