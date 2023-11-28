@@ -14,6 +14,8 @@ Must be connected to a SQL database for functionality to work. Database structur
 
 To deploy this code on a server outside your local environment please see *documentation/deploy-instruction.md*
 
+There are still some things which at this point work partially or things that should be added to create better functionality. See issues section on GitHub.
+
 
 
 ## STATUS:
