@@ -52,6 +52,8 @@ The outcome should be a working interface, in the sense that it's rendered via P
 
 self eval: 6.8 / 8
 
+[assignment 9 readme](https://github.com/abbeyGirvan/dgl123-project/blob/main/README-assignment9.md)
+
 ### November 1st lab
 
 Flowcharting logic for dynamic pages. For flowchart images see MS word document included in documentation folder, file name Lab9a. 
